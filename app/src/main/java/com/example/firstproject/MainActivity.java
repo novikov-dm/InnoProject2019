@@ -69,6 +69,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void decision(View view) {
-        Toast.makeText(this, "Выполни действе в скобках, а затем умножь", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Выполни действе в скобках, а затем умножь", Toast.LENGTH_LONG).show();
     }
 }
