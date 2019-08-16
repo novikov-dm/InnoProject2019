@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
     List<Integer> answers = new ArrayList<Integer>();
 
 
-   /* @Override
+            @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
-   }*/
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         mQue.setText(problem.getRequirement());
-
 
     }
 
