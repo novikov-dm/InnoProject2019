@@ -2,8 +2,8 @@ package com.example.firstproject;
 
 public class Tester {
 
-    private final String TRUE = "Правильно";
-    private final String FALSE = "Неправильно";
+    private final String TRUE = "";
+    private final String FALSE = "";
 
     private String question;
     private String answer;
