@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         mDec = findViewById(R.id.butDecision);
 
 
-
         mQue.setText(problem.getRequirement());
 
 
@@ -69,4 +68,5 @@ public class MainActivity extends AppCompatActivity {
         } else {
             mHel.setText("NO");
         }
+    }
 }
