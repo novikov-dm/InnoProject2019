@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText mEdit;
     private Button mBut;
     private Button mDec;
+    private ImageView mWrong;
 
     String line;
     int count = 0;
@@ -67,5 +69,4 @@ public class MainActivity extends AppCompatActivity {
         } else {
             mHel.setText("NO");
         }
-    }
 }
