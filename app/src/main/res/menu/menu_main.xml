@@ -7,15 +7,19 @@
         android:id="@+id/settings"
         android:orderInCategory="100"
         android:title="@string/settings"
-        app:showAsAction="never"/>
+        android:onClick="onSettingsMenuClick"
+        app:showAsAction="never" />
     <item
         android:id="@+id/about"
         android:orderInCategory="100"
         android:title="@string/about"
+        android:onClick="onSettingsMenuClick"
         app:showAsAction="never"/>
     <item
         android:id="@+id/tasks"
         android:orderInCategory="100"
         android:title="@string/tasks"
+        android:onClick="onSettingsMenuClick"
         app:showAsAction="never"/>
+
 </menu>
