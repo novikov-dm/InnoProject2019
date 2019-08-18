@@ -19,7 +19,10 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    Problem problem = new Problem();
+    private int nProblems = 7;
+    private Problem[] problems = new Problem[nProblems];
+
+
     private TextView mHel;
     private TextView mQue;
     private EditText mEdit;
@@ -51,21 +54,33 @@ public class MainActivity extends AppCompatActivity {
         mBut = findViewById(R.id.buttonInt);
         mDec = findViewById(R.id.butDecision);
 
+        problems[0] = new Problem1();
+        problems[1] = new Problem2();
+        problems[2] = new Problem3();
+        problems[3] = new Problem4();
+        problems[4] = new Problem5();
+        problems[5] = new Problem7();
+        problems[6] = new Problem8();
 
-        mQue.setText(problem.getRequirement());
+
+        mQue.setText(problems[count].getRequirement());
 
     }
 
+
     public void decision(View view) {
-        Toast.makeText(this, "Посчитай внимательнее", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "А кто сказал, что у нас есть решение?", Toast.LENGTH_SHORT).show();
     }
 
     public void test(View view) {
-        problem.setUserAnswer(Double.parseDouble(mEdit.getText().toString()));
-        if (problem.getVerdict()) {
-            mHel.setText("YES");
-        } else {
-            mHel.setText("NO");
+        if (count < nProblems) {
+            problems[count].setUserAnswer(mEdit.getText().toString().trim());
+            if (problems[count].getVerdict()) {
+                Toast.makeText(this, "Верно!", Toast.LENGTH_SHORT).show();
+                count++;
+            } else {
+                Toast.makeText(this, "Неверно(", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }
