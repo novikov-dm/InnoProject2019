@@ -13,7 +13,12 @@ abstract class Problem {
     }
 
     public boolean getVerdict() {
-        return userAnswer.equals(String.valueOf(result));
+        try {
+            double eps = 0.001;
+            return Math.abs(Double.parseDouble(userAnswer) - result) < eps;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 
     //TO DO

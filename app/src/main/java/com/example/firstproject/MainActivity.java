@@ -3,6 +3,7 @@ package com.example.firstproject;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
@@ -22,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
     private int nProblems = 7;
     private Problem[] problems = new Problem[nProblems];
-
 
     private TextView mHel;
     private TextView mQue;
@@ -67,10 +67,24 @@ public class MainActivity extends AppCompatActivity {
         mQue.setText(problems[count].getRequirement());
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id) {
+            case R.id.about:
+                Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+                startActivity(intent);
+                return true;
+            default:
+                    return super.onOptionsItemSelected(item);
+        }
+    }
 
     public void decision(View view) {
         Toast.makeText(this, "А кто сказал, что у нас есть решение?", Toast.LENGTH_SHORT).show();
     }
+
 
 
     public void test(View view) {
