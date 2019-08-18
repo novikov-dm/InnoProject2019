@@ -12,20 +12,19 @@
         android:layout_width="0dp"
         android:layout_height="59dp"
         android:layout_marginStart="22dp"
-        android:layout_marginLeft="22dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
         android:background="#ffffff"
         android:ems="10"
         android:hint="Введите ответ"
-        android:text=" "
-        android:textSize="24sp"
         android:inputType="numberDecimal"
+        android:text=" "
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonInt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewQuest" >
-    <requestFocus />
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuest">
+
+        <requestFocus />
     </EditText>
 
 
@@ -77,7 +76,12 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewQuest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:indeterminate="false"
+        android:max="70"
+        android:progress="10"
+        />
+
 
     <Button
         android:id="@+id/butDecision"
