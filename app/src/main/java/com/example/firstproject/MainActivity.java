@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -48,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mHel = findViewById(R.id.textViewMark);
         mQue = findViewById(R.id.textViewQuest);
         mEdit = findViewById(R.id.editTextAnswer);
         mBut = findViewById(R.id.buttonInt);
@@ -63,14 +63,15 @@ public class MainActivity extends AppCompatActivity {
         problems[6] = new Problem8();
 
 
+        mQue.setMovementMethod(new ScrollingMovementMethod());
         mQue.setText(problems[count].getRequirement());
-
     }
 
 
     public void decision(View view) {
         Toast.makeText(this, "А кто сказал, что у нас есть решение?", Toast.LENGTH_SHORT).show();
     }
+
 
     public void test(View view) {
         if (count < nProblems) {
