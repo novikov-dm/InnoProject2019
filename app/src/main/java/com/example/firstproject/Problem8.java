@@ -15,7 +15,7 @@ public class Problem8 extends Problem {
 
 
     private int min2 = 100;
-    private int max2 = 500;
+    private int max2 = 199;
     private int dif2 = max2 - min2;
     private int price = random.nextInt(dif2) + min2;
 

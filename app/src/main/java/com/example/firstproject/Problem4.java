@@ -21,6 +21,6 @@ public class Problem4 extends Problem {
 
     @Override
     public String getRequirement() {
-        return String.format(requirement, VALUE, speed);
+        return String.format(requirement, speed);
     }
 }

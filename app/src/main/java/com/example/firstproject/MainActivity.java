@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void test(View view) {
-        if (count < nProblems) {
             problems[count].setUserAnswer(mEdit.getText().toString().trim());
             if (problems[count].getVerdict()) {
                 Toast.makeText(this, "Верно!", Toast.LENGTH_SHORT).show();
@@ -81,6 +80,5 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(this, "Неверно(", Toast.LENGTH_SHORT).show();
             }
-        }
     }
 }
