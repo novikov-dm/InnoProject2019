@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -45,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mHel = findViewById(R.id.textViewMark);
         mQue = findViewById(R.id.textViewQuest);
         mEdit = findViewById(R.id.editTextAnswer);
         mBut = findViewById(R.id.buttonInt);
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         mQue.setText(problem.getRequirement());
-
+        mQue.setMovementMethod(new ScrollingMovementMethod());
 
     }
 
@@ -61,12 +61,5 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Посчитай внимательнее", Toast.LENGTH_SHORT).show();
     }
 
-    public void test(View view) {
-        problem.setUserAnswer(Double.parseDouble(mEdit.getText().toString()));
-        if (problem.getVerdict()) {
-            mHel.setText("YES");
-        } else {
-            mHel.setText("NO");
-        }
-    }
+
 }
