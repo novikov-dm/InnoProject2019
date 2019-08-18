@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     List<Integer> answers = new ArrayList<Integer>();
 
 
-            @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
@@ -92,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
             if (problems[count].getVerdict()) {
                 Toast.makeText(this, "Верно!", Toast.LENGTH_SHORT).show();
                 count++;
+                if (count < nProblems) {
+                    mQue.setText(problems[count].getRequirement());
+                }
             } else {
                 Toast.makeText(this, "Неверно(", Toast.LENGTH_SHORT).show();
             }

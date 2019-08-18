@@ -14,13 +14,13 @@ abstract class Problem {
 
     public boolean getVerdict() {
         try {
-            double eps = 0.001;
+            double eps = 0.05;
             return Math.abs(Double.parseDouble(userAnswer) - result) < eps;
         } catch (NumberFormatException e) {
             return false;
         }
     }
 
-    //TO DO
+    //TODO
     //Создать метод возвращающий образец решения
 }

@@ -10,8 +10,6 @@ public class Problem1 extends Problem {
 
     private String[] requirements = {requirement1, requirement2};
 
-    private double userAnswer;
-
     private int min1 = 50;
     private int max1 = 200;
     private int dif1 = max1 - min1;
