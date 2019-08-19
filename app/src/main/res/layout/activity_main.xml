@@ -80,7 +80,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:indeterminate="false"
         android:max="70"
-        android:progress="10"
+        android:progress="0"
         />
 
 
