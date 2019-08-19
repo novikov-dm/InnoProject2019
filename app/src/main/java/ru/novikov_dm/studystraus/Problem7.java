@@ -1,4 +1,4 @@
-package com.example.firstproject;
+package ru.novikov_dm.studystraus;
 
 public class Problem7 extends Problem {
     private String requirement1 = "В квартире, где проживает Алексей, установлен прибор учёта расхода холодной воды " +

@@ -1,4 +1,4 @@
-package com.example.firstproject;
+package ru.novikov_dm.studystraus;
 
 public class Problem2 extends Problem {
     private String requirement1 = "Поезд Казань-Москва отправляется в %d:%s, " +

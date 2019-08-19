@@ -1,4 +1,4 @@
-package com.example.firstproject;
+package ru.novikov_dm.studystraus;
 
 import java.util.Random;
 
@@ -29,4 +29,5 @@ abstract class Problem {
 
     //TO DO
     //Создать метод возвращающий образец решения
+
 }

@@ -1,4 +1,4 @@
-package com.example.firstproject;
+package ru.novikov_dm.studystraus;
 
 public class Problem5 extends Problem {
     private String requirement = "На счету Машиного мобильного телефона было %d руб., а после разговора с Леной осталось %d руб. " +

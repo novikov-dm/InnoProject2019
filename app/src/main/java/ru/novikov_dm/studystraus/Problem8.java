@@ -1,4 +1,4 @@
-package com.example.firstproject;
+package ru.novikov_dm.studystraus;
 
 public class Problem8 extends Problem {
     private String requirement = "Маша отправила SMS-сообщения с новогодними поздравлениями своим %d друзьям. " +

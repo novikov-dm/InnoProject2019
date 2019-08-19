@@ -1,4 +1,4 @@
-package com.example.firstproject;
+package ru.novikov_dm.studystraus;
 
 public class Problem1 extends Problem {
     private String requirement1 = "Килограмм орехов стоит %d рублей. Маша купила %d кг %d г орехов. " +
