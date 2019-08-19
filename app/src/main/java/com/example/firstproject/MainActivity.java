@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBut;
     private Button mDec;
     private ImageView mWrong;
-
+    private ProgressBar mProgressBar;
     String line;
     int count = 0;
 
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mProgressBar = findViewById(R.id.progressBar);
 
         mQue = findViewById(R.id.textViewQuest);
         mEdit = findViewById(R.id.editTextAnswer);
@@ -85,17 +88,22 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "А кто сказал, что у нас есть решение?", Toast.LENGTH_SHORT).show();
     }
 
-
-
     public void test(View view) {
             problems[count].setUserAnswer(mEdit.getText().toString().trim());
             if (problems[count].getVerdict()) {
+                mEdit.setText("");
                 Toast.makeText(this, "Верно!", Toast.LENGTH_SHORT).show();
                 count++;
+                mProgressBar.setProgress(count * 10);
                 if (count < nProblems) {
                     mQue.setText(problems[count].getRequirement());
                 }
+                else{
+                    Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+                    startActivity(intent);
+                }
             } else {
+                mEdit.setText("");
                 Toast.makeText(this, "Неверно(", Toast.LENGTH_SHORT).show();
             }
     }
