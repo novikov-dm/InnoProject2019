@@ -1,6 +1,5 @@
 package com.example.firstproject;
 
-import java.util.Random;
 import java.lang.Math;
 
 public class Problem4 extends Problem {
@@ -11,13 +10,17 @@ public class Problem4 extends Problem {
 
     private final int VALUE = 1609;
     private int min = 0;
-    private int max = 270;
+    private int max = 5;
     private int dif = max - min;
-    Random random = new Random();
-    private int speed = random.nextInt(dif) + min;
+    private int speed = (random.nextInt(dif) + min) * 10;
 
-    private double unrounded_result = speed * VALUE / 1000;
+    private double unrounded_result = speed * VALUE / 1000.0;
     private double result = (int) Math.round(unrounded_result);
+
+    @Override
+    public String getResult(){
+        return String.valueOf(result);
+    }
 
     @Override
     public String getRequirement() {
