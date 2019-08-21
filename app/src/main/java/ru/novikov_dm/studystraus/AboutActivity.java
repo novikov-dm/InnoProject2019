@@ -1,7 +1,9 @@
-package com.example.firstproject;
+package ru.novikov_dm.studystraus;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.example.firstproject.R;
 
 public class AboutActivity extends Activity {
     @Override

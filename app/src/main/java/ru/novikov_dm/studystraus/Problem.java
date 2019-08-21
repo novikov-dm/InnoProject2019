@@ -1,4 +1,4 @@
-package com.example.firstproject;
+package ru.novikov_dm.studystraus;
 
 abstract class Problem {
     private String requirement;

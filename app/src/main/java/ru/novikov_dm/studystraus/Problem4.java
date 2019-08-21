@@ -1,4 +1,4 @@
-package com.example.firstproject;
+package ru.novikov_dm.studystraus;
 
 import java.util.Random;
 import java.lang.Math;

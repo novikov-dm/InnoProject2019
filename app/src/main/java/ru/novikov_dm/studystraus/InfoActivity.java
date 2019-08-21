@@ -1,4 +1,4 @@
-package com.example.firstproject;
+package ru.novikov_dm.studystraus;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.firstproject.R;
 
 public class InfoActivity extends AppCompatActivity {
     @Override
