@@ -18,18 +18,20 @@ import android.widget.Toast;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class Problems1Activity extends AppCompatActivity {
 
     private int nProblems = 7;
     private Problem[] problems = new Problem[nProblems];
 
     private TextView mHel;
-    private TextView mQue;
-    private EditText mEdit;
-    private Button mBut;
-    private Button mDec;
+    private TextView mTextViewQuestion;
+    private EditText mEditTextAnswer;
+    private Button mButtonInt;
+    private Button mButDecision;
     private ImageView mWrong;
     private ProgressBar mProgressBar;
     String line;
@@ -48,14 +50,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_problems1);
 
         mProgressBar = findViewById(R.id.progressBar);
 
-        mQue = findViewById(R.id.textViewQuest);
-        mEdit = findViewById(R.id.editTextAnswer);
-        mBut = findViewById(R.id.buttonInt);
-        mDec = findViewById(R.id.butDecision);
+        mTextViewQuestion = findViewById(R.id.textViewQuest);
+        mEditTextAnswer = findViewById(R.id.editTextAnswer);
+        mButtonInt = findViewById(R.id.buttonInt);
+        mButDecision = findViewById(R.id.butDecision);
+
 
         problems[0] = new Problem1();
         problems[1] = new Problem2();
@@ -65,9 +68,10 @@ public class MainActivity extends AppCompatActivity {
         problems[5] = new Problem7();
         problems[6] = new Problem8();
 
+        Collections.shuffle(Arrays.asList(problems));
 
-        mQue.setMovementMethod(new ScrollingMovementMethod());
-        mQue.setText(problems[count].getRequirement());
+        mTextViewQuestion.setMovementMethod(new ScrollingMovementMethod());
+        mTextViewQuestion.setText(problems[count].getRequirement());
     }
 
     @Override
@@ -76,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch (id) {
             case R.id.about:
-                Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+                Intent intent = new Intent(Problems1Activity.this, InfoActivity.class);
                 startActivity(intent);
                 return true;
             default:
@@ -89,22 +93,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void test(View view) {
-            problems[count].setUserAnswer(mEdit.getText().toString().trim());
+            problems[count].setUserAnswer(mEditTextAnswer.getText().toString().trim());
             if (problems[count].getVerdict()) {
-                mEdit.setText("");
+                mEditTextAnswer.setText("");
                 Toast.makeText(this, "Верно!", Toast.LENGTH_SHORT).show();
                 count++;
                 mProgressBar.setProgress(count * 10);
                 if (count < nProblems) {
-                    mQue.setText(problems[count].getRequirement());
+                    mTextViewQuestion.setText(problems[count].getRequirement());
                 }
                 else{
-                    Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+                    Intent intent = new Intent(Problems1Activity.this, InfoActivity.class);
                     startActivity(intent);
                 }
             } else {
-                mEdit.setText("");
+                mEditTextAnswer.setText("");
                 Toast.makeText(this, "Неверно(", Toast.LENGTH_SHORT).show();
             }
     }
+
 }

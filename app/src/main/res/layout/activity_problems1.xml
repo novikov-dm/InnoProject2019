@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back"
-    tools:context="ru.novikov_dm.studystraus.MainActivity">
+    tools:context="ru.novikov_dm.studystraus.Problems1Activity">
 
     <EditText
         android:id="@+id/editTextAnswer"

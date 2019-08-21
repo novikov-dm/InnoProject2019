@@ -3,4 +3,10 @@
     <string name="settings">Настройки</string>
     <string name="about">О приложении</string>
     <string name="tasks">Задачи</string>
+    <string name="button1">ТИП 1. ВЫЧИСЛЕНИЯ</string>
+    <string name="text_view">ТЕМА №1. ПРОСТЕЙШИЕ ТЕКСТОВЫЕ ЗАДАЧИ</string>
+    <string name="button2">ТИП 2. ОКРУГЛЕНИЕ С ИЗБЫТКОМ</string>
+    <string name="button3">ТИП 3. ОКРУГЛЕНИЕ С НЕДОСТАТКОМ</string>
+    <string name="button4">ТИП 4. ПРОЦЕНТЫ</string>
+    <string name="button5">ТИП 5. ПРОЦЕНТЫ И ОКРУГЛЕНИЯ</string>
 </resources>

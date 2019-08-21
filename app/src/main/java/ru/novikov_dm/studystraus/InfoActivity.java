@@ -27,7 +27,7 @@ public class InfoActivity extends AppCompatActivity {
 
         switch (id) {
             case R.id.tasks:
-                Intent intent = new Intent(InfoActivity.this, MainActivity.class);
+                Intent intent = new Intent(InfoActivity.this, Problems1Activity.class);
                 startActivity(intent);
                 return true;
             default:
