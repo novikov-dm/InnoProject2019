@@ -7,96 +7,92 @@
     android:background="@drawable/back"
     tools:context="ru.novikov_dm.studystraus.MainActivity">
 
-    <EditText
-        android:id="@+id/editTextAnswer"
-        android:layout_width="0dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
-        android:background="#ffffff"
-        android:ems="10"
-        android:hint="Введите ответ"
-        android:inputType="numberDecimal"
-        android:text=" "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/buttonInt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewQuest">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <requestFocus />
-    </EditText>
+        <TextView
+            android:id="@+id/textViewThem"
+            android:layout_width="wrap_content"
+            android:layout_height="118dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="40dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:text="@string/text_view"
+            android:textSize="27sp"
+            android:textStyle="bold" />
 
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffc046"
+            android:onClick="toProblems1"
+            android:text="@string/button1" />
 
-    <Button
-        android:id="@+id/buttonInt"
-        android:layout_width="0dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="22dp"
-        android:background="#ffa726"
-        android:onClick="test"
-        android:text="Проверить"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextAnswer"
-        app:layout_constraintTop_toBottomOf="@+id/textViewQuest" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffc046"
+            android:text="@string/button2" />
 
-    <TextView
-        android:id="@+id/textViewQuest"
-        android:layout_width="0dp"
-        android:layout_height="186dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="16dp"
-        android:background="#ffffff"
-        android:hint="Вопрос"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:scrollbars="vertical"
-        android:text="  "
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextAnswer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffc046"
+            android:text="@string/button3" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="0dp"
-        android:layout_height="11dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginEnd="22dp"
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="5dp"
+            android:background="#ffc046"
+            android:text="@string/button4" />
 
-        android:layout_marginBottom="5dp"
-        android:background="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/textViewQuest"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        android:indeterminate="false"
-        android:max="70"
-        android:progress="10"
-        />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="0dp"
+            android:background="#ffc046"
+            android:text="@string/button5" />
 
-
-    <Button
-        android:id="@+id/butDecision"
-        android:layout_width="0dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="22dp"
-        android:background="#ffc046"
-        android:onClick="decision"
-        android:text="Показать решение"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewQuest" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

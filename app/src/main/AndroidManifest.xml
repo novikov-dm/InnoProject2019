@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.firstproject">
+    package="ru.novikov_dm.studystraus">
 
     <application
         android:allowBackup="true"
@@ -18,6 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name="ru.novikov_dm.studystraus.InfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="ru.novikov_dm.studystraus.Problems1Activity"
             android:screenOrientation="portrait">
 
         </activity>
