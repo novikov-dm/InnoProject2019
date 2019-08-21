@@ -10,6 +10,7 @@ public class Problem4 extends Problem {
 
     private final int VALUE = 1609;
     private int min = 0;
+
     private int max = 5;
     private int dif = max - min;
     private int speed = (random.nextInt(dif) + min) * 10;

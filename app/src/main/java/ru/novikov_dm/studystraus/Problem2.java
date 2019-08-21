@@ -8,6 +8,7 @@ public class Problem2 extends Problem {
     private String requirement3 = "Поезд Новосибирск-Красноярск отправляется в %d:%s, " +
             "а прибывает в %d:%s на следующий день (время московское). Сколько часов поезд находится в пути?";
 
+
     private String[] requirements = {requirement1, requirement2, requirement3};
 
 
@@ -15,6 +16,7 @@ public class Problem2 extends Problem {
     private double userAnswer;
 
     private int min1 = 0;
+
     private int max1 = 144;
     private int dif1 = max1 - min1;
     private int departure_time = (random.nextInt(dif1) + min1) * 10;
@@ -23,6 +25,7 @@ public class Problem2 extends Problem {
     private int max2 = 12;
     private int dif2 = max2 - min2;
     private int result1 = (random.nextInt(dif2) + min2);
+
 
     private int arrival_time = (departure_time + result1 * 60) % (24 * 60);
     private int result = MIDNIGHT - departure_time / 60 + arrival_time / 60;
@@ -38,5 +41,6 @@ public class Problem2 extends Problem {
     public String getRequirement() {
         int min = departure_time % 60;
         return String.format(requirements[n], departure_time / 60, String.format("%d%d",min/10,min%10), arrival_time / 60, String.format("%d%d",min/10,min%10));
+
     }
 }

@@ -8,8 +8,6 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-
 public class InfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +25,7 @@ public class InfoActivity extends AppCompatActivity {
 
         switch (id) {
             case R.id.tasks:
-                Intent intent = new Intent(InfoActivity.this, Problems1Activity.class);
+                Intent intent = new Intent(InfoActivity.this, MainActivity.class);
                 startActivity(intent);
                 return true;
             default:

@@ -5,6 +5,7 @@ import java.util.Random;
 abstract class Problem {
 
     Random random = new Random();
+
     private String requirement;
 
     private String userAnswer;
