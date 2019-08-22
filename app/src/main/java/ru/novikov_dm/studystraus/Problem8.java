@@ -3,16 +3,19 @@ package ru.novikov_dm.studystraus;
 public class Problem8 extends Problem {
     private String requirement = "Маша отправила SMS-сообщения с новогодними поздравлениями своим %d друзьям. " +
             "Стоимость одного SMS-сообщения %d руб. Перед отправкой сообщения на счету у Маши было %d рублей." +
+
             " Сколько рублей останется у Маши после отправки всех сообщений?";
 
     private int min1 = 5;
     private int max1 = 25;
     private int dif1 = max1 - min1;
+
     private int count = random.nextInt(dif1) + min1;
 
 
     private int min2 = 3;
     private int max2 = 5;
+
     private int dif2 = max2 - min2;
     private int price = random.nextInt(dif2) + min2;
 
