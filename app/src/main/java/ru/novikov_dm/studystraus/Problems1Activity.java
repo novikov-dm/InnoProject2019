@@ -103,7 +103,7 @@ public class Problems1Activity extends AppCompatActivity {
                     mTextViewQuestion.setText(problems[count].getRequirement());
                 }
                 else{
-                    Intent intent = new Intent(Problems1Activity.this, InfoActivity.class);
+                    Intent intent = new Intent(Problems1Activity.this, EndScreenActivity.class);
                     startActivity(intent);
                 }
             } else {
