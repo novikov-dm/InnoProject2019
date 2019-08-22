@@ -24,7 +24,7 @@ import java.util.List;
 
 public class Problems1Activity extends AppCompatActivity {
 
-    private int nProblems = 7;
+    private int nProblems = 5;
     private Problem[] problems = new Problem[nProblems];
 
     private TextView mHel;
@@ -60,13 +60,15 @@ public class Problems1Activity extends AppCompatActivity {
         mButDecision = findViewById(R.id.butDecision);
 
 
-        problems[0] = new Problem1();
+        /*problems[0] = new Problem1();
         problems[1] = new Problem2();
         problems[2] = new Problem3();
         problems[3] = new Problem4();
         problems[4] = new Problem5();
         problems[5] = new Problem7();
-        problems[6] = new Problem8();
+        problems[6] = new Problem8();*/
+
+        problems = ((Problems) getIntent().getExtras().getSerializable(Problems.class.getSimpleName())).setProblems();
 
         Collections.shuffle(Arrays.asList(problems));
 
