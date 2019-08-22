@@ -1,9 +1,8 @@
 package ru.novikov_dm.studystraus;
 
-public class Problem3 extends Problem {
+public class Problem1_1_3 extends Problem {
 
     private String requirement = "Таксист за месяц проехал %d километров. Стоимость 1 литра бензина - %d рублей. " +
-
             "Средний расход бензина на 100 км составляет %d литров. Сколько рублей потратил таксист на бензин за этот месяц?";
 
     private double userAnswer;
@@ -19,7 +18,6 @@ public class Problem3 extends Problem {
     private int price = (min2 + random.nextInt(dif2)) * 10;
 
     private int min3 = 9;
-
     private int max3 = 15;
     private int dif3 = max3 - min3;
     private int volume = min3 + random.nextInt(dif3);

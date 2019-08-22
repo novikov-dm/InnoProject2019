@@ -55,6 +55,7 @@
             android:layout_marginRight="13dp"
             android:layout_marginBottom="5dp"
             android:background="#ffc046"
+            android:onClick="toProblems2"
             android:text="@string/button2" />
 
         <Button

@@ -1,7 +1,6 @@
 package ru.novikov_dm.studystraus;
 
-
-public class Problem7 extends Problem {
+public class Problem1_1_7 extends Problem {
     private String requirement1 = "В квартире, где проживает Алексей, установлен прибор учёта расхода холодной воды " +
             "(счётчик). 1 сентября счётчик показывал расход %d куб. м воды, а 1 октября — %d куб. м. " +
             "Какую сумму должен заплатить Алексей за холодную воду за сентябрь, " +
@@ -11,14 +10,11 @@ public class Problem7 extends Problem {
             "Сколько нужно заплатить за холодную воду за июль, " +
             "если стоимость 1 куб. м холодной воды составляет %d руб. %d коп.? Ответ дайте в рублях. ";
 
-
     private String[] requirements = {requirement1, requirement2};
-
 
     private int min1 = 3000;
     private int max1 = 5000;
     private int dif1 = max1 - min1;
-
     private int month_1 = random.nextInt(dif1) + min1;
 
     private int min2 = 100;
@@ -27,7 +23,6 @@ public class Problem7 extends Problem {
     private int result1 = random.nextInt(dif2) + min2;
 
     private int min3 = 200;
-
     private int max3 = 250;
     private int dif3 = max3 - min3;
     private int price = (random.nextInt(dif3) + min3) * 10;

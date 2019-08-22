@@ -1,15 +1,12 @@
 package ru.novikov_dm.studystraus;
 
-import java.util.Random;
-
-public class Problem1 extends Problem {
+public class Problem1_1_1 extends Problem {
     private String requirement1 = "Килограмм орехов стоит %d рублей. Маша купила %d кг %d г орехов. " +
             "Сколько рублей сдачи она должна получить с %d рублей?";
     private String requirement2 = "Летом килограмм клубники стоит %d рублей. Мама купила %d кг %d г клубники." +
             " Сколько рублей сдачи она получит с %d рублей?";
 
     private String[] requirements = {requirement1, requirement2};
-    private double userAnswer;
 
     private int min1 = 5;
     private int max1 = 15;
@@ -33,7 +30,6 @@ public class Problem1 extends Problem {
     public String getResult(){
         return String.valueOf(result);
     }
-
 
     private int n = random.nextInt(requirements.length);
 
