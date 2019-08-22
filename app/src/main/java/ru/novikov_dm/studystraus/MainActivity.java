@@ -30,7 +30,10 @@ public class MainActivity extends AppCompatActivity {
         //problems[5] = new Problem7();
         //problems[6] = new Problem8();
 
+        Problems problems = new Problems(new Problem1(), new Problem2(), new Problem3(), new Problem4(), new Problem5());
+
         Intent intent = new Intent(MainActivity.this, Problems1Activity.class);
+        intent.putExtra(Problems.class.getSimpleName(), problems);
         startActivity(intent);
     }
 }
