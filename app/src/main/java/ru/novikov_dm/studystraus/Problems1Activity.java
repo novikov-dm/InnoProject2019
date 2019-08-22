@@ -68,6 +68,7 @@ public class Problems1Activity extends AppCompatActivity {
         problems[8] = new Problem1_1_9();
         problems[9] = new Problem1_1_10();*/
 
+
         Collections.shuffle(Arrays.asList(problems));
 
         mTextViewQuestion.setMovementMethod(new ScrollingMovementMethod());
