@@ -68,6 +68,7 @@
             android:layout_marginRight="13dp"
             android:layout_marginBottom="5dp"
             android:background="#ffc046"
+            android:onClick="toProblems3"
             android:text="@string/button3" />
 
         <Button
@@ -80,6 +81,7 @@
             android:layout_marginRight="13dp"
             android:layout_marginBottom="5dp"
             android:background="#ffc046"
+            android:onClick="toProblems4"
             android:text="@string/button4" />
 
         <Button
@@ -92,6 +94,7 @@
             android:layout_marginRight="13dp"
             android:layout_marginBottom="0dp"
             android:background="#ffc046"
+            android:onClick="toProblems5"
             android:text="@string/button5" />
 
     </LinearLayout>

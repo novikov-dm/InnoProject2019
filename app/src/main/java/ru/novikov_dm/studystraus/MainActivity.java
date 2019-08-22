@@ -47,5 +47,19 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, Problems2Activity.class);
         startActivity(intent);
     }
+    public void toProblems3(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems3Activity.class);
+        startActivity(intent);
+    }
+
+    public void toProblems4(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems4Activity.class);
+        startActivity(intent);
+    }
+
+    public void toProblems5(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems5Activity.class);
+        startActivity(intent);
+    }
 }
 

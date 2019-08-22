@@ -26,7 +26,15 @@
         <activity android:name="ru.novikov_dm.studystraus.Problems2Activity"
             android:screenOrientation="portrait">
         </activity>
-
+        <activity android:name="ru.novikov_dm.studystraus.Problems3Activity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="ru.novikov_dm.studystraus.Problems4Activity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="ru.novikov_dm.studystraus.Problems5Activity"
+            android:screenOrientation="portrait">
+        </activity>
 
     <activity android:name="ru.novikov_dm.studystraus.EndScreenActivity"
         android:screenOrientation="portrait">
