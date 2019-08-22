@@ -36,9 +36,6 @@ public class Problems5Activity extends AppCompatActivity {
     String line;
     int count = 0;
 
-    List<Integer> questions = new ArrayList<Integer>();
-    List<Integer> answers = new ArrayList<Integer>();
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -59,16 +56,16 @@ public class Problems5Activity extends AppCompatActivity {
         mButDecision = findViewById(R.id.butDecision);
 
 
-        problems[0] = new Problem1_1_1();
-        problems[1] = new Problem1_1_2();
-        problems[2] = new Problem1_1_3();
-        problems[3] = new Problem1_1_4();
-        problems[4] = new Problem1_1_5();
-        problems[5] = new Problem1_1_6();
+        problems[0] = new Problem1_5_1();
+        problems[1] = new Problem1_5_2();
+        problems[2] = new Problem1_5_3();
+        problems[3] = new Problem1_5_4();
+        problems[4] = new Problem1_5_5();
+        /*problems[5] = new Problem1_1_6();
         problems[6] = new Problem1_1_7();
         problems[7] = new Problem1_1_8();
         problems[8] = new Problem1_1_9();
-        problems[9] = new Problem1_1_10();
+        problems[9] = new Problem1_1_10();*/
 
         Collections.shuffle(Arrays.asList(problems));
 
