@@ -64,12 +64,7 @@ public class Problems3Activity extends AppCompatActivity {
         problems[2] = new Problem1_3_3();
         problems[3] = new Problem1_3_4();
         problems[4] = new Problem1_3_5();
-        /*problems[5] = new Problem1_1_6();
-        problems[6] = new Problem1_1_7();
-        problems[7] = new Problem1_1_8();
-        problems[8] = new Problem1_1_9();
-        problems[9] = new Problem1_1_10();
-*/
+
         Collections.shuffle(Arrays.asList(problems));
 
         mTextViewQuestion.setMovementMethod(new ScrollingMovementMethod());
