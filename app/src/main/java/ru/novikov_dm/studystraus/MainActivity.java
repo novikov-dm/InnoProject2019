@@ -40,10 +40,9 @@ public class MainActivity extends AppCompatActivity {
         //problems[5] = new Problem7();
         //problems[6] = new Problem8();
 
-        Problems problems = new Problems(new Problem1(), new Problem2(), new Problem3(), new Problem4(), new Problem5());
 
         Intent intent = new Intent(MainActivity.this, Problems1Activity.class);
-        intent.putExtra(Problems.class.getSimpleName(), problems);
+
         startActivity(intent);
     }
 
@@ -63,6 +62,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void toProblems2(View view) {
         Intent intent = new Intent(MainActivity.this, Problems2Activity.class);
+        startActivity(intent);
+    }
+
+    public void toProblems3(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems3Activity.class);
+        startActivity(intent);
+    }
+
+    public void toProblems4(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems4Activity.class);
+        startActivity(intent);
+    }
+
+    public void toProblems5(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems5Activity.class);
         startActivity(intent);
     }
 }
