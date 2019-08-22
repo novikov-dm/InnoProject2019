@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+    public void toProblems1(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems1Activity.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
@@ -45,6 +50,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void toProblems2(View view) {
         Intent intent = new Intent(MainActivity.this, Problems2Activity.class);
+        startActivity(intent);
+    }
+
+    public void toProblems3(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems3Activity.class);
+        startActivity(intent);
+    }
+
+    public void toProblems4(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems4Activity.class);
+        startActivity(intent);
+    }
+
+    public void toProblems5(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems5Activity.class);
         startActivity(intent);
     }
 }
