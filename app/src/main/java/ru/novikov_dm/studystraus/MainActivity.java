@@ -60,5 +60,10 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    public void toProblems2(View view) {
+        Intent intent = new Intent(MainActivity.this, Problems2Activity.class);
+        startActivity(intent);
+    }
 }
 

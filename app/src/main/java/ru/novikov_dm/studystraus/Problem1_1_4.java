@@ -1,16 +1,13 @@
 package ru.novikov_dm.studystraus;
 
-import java.lang.Math;
-
-public class Problem4 extends Problem {
+public class Problem1_1_4 extends Problem {
     private String requirement = "Павел Иванович купил американский автомобиль, " +
             "на спидометре которого скорость измеряется в милях в час. " +
             "Американская миля равна 1609 м. Какова скорость автомобиля в километрах в час, " +
             "если спидометр показывает %d миль в час? Ответ округлите до целого числа";
 
     private final int VALUE = 1609;
-    private int min = 0;
-
+    private int min = 1;
     private int max = 5;
     private int dif = max - min;
     private int speed = (random.nextInt(dif) + min) * 10;

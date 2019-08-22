@@ -1,8 +1,5 @@
 package ru.novikov_dm.studystraus;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -16,13 +13,15 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class Problems1Activity extends AppCompatActivity {
+public class Problems2Activity extends AppCompatActivity {
 
     private int nProblems = 5;
     private Problem[] problems = new Problem[nProblems];
@@ -36,6 +35,9 @@ public class Problems1Activity extends AppCompatActivity {
     private ProgressBar mProgressBar;
     String line;
     int count = 0;
+
+    List<Integer> questions = new ArrayList<Integer>();
+    List<Integer> answers = new ArrayList<Integer>();
 
 
     @Override
@@ -57,17 +59,13 @@ public class Problems1Activity extends AppCompatActivity {
         mButDecision = findViewById(R.id.butDecision);
 
 
-        problems[0] = new Problem1_1_1();
-        problems[1] = new Problem1_1_2();
-        problems[2] = new Problem1_1_3();
-        problems[3] = new Problem1_1_4();
-        problems[4] = new Problem1_1_5();
-/*        problems[5] = new Problem1_1_6();
-        problems[6] = new Problem1_1_7();
-        problems[7] = new Problem1_1_8();
-        problems[8] = new Problem1_1_9();
-        problems[9] = new Problem1_1_10();*/
-
+        problems[0] = new Problem1_2_1();
+        problems[1] = new Problem1_2_2();
+        problems[2] = new Problem1_2_3();
+        problems[3] = new Problem1_2_4();
+        problems[4] = new Problem1_2_5();
+        //problems[5] = new Problem1_2_6();
+       // problems[6] = new Problem1_2_7();
 
         Collections.shuffle(Arrays.asList(problems));
 
@@ -81,11 +79,11 @@ public class Problems1Activity extends AppCompatActivity {
 
         switch (id) {
             case R.id.about:
-                Intent intent = new Intent(Problems1Activity.this, InfoActivity.class);
+                Intent intent = new Intent(Problems2Activity.this, InfoActivity.class);
                 startActivity(intent);
                 return true;
             case R.id.tasks:
-                intent = new Intent(Problems1Activity.this, MainActivity.class);
+                intent = new Intent(Problems2Activity.this, MainActivity.class);
                 startActivity(intent);
                 return true;
             default:
@@ -108,7 +106,7 @@ public class Problems1Activity extends AppCompatActivity {
                     mTextViewQuestion.setText(problems[count].getRequirement());
                 }
                 else{
-                    Intent intent = new Intent(Problems1Activity.this, EndScreenActivity.class);
+                    Intent intent = new Intent(Problems2Activity.this, EndScreenActivity.class);
                     startActivity(intent);
                 }
             } else {

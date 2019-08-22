@@ -1,7 +1,6 @@
 package ru.novikov_dm.studystraus;
 
-
-public class Problem5 extends Problem {
+public class Problem1_1_5 extends Problem {
     private String requirement = "На счету Машиного мобильного телефона было %d руб., а после разговора с Леной осталось %d руб. " +
             "Сколько минут длился разговор с Леной, если одна минута разговора стоит %d руб.?";
 

@@ -22,7 +22,9 @@
         </activity>
         <activity android:name="ru.novikov_dm.studystraus.Problems1Activity"
             android:screenOrientation="portrait">
-
+        </activity>
+        <activity android:name="ru.novikov_dm.studystraus.Problems2Activity"
+            android:screenOrientation="portrait">
         </activity>
 
 

@@ -22,7 +22,7 @@ public class EndScreenActivity extends AppCompatActivity {
     }
 
     public void toProblem1(View view) {
-        Intent intent = new Intent(EndScreenActivity.this, Problem1.class);
+        Intent intent = new Intent(EndScreenActivity.this, Problems1Activity.class);
         startActivity(intent);
     }
 

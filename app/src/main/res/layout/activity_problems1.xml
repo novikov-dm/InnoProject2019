@@ -79,7 +79,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         android:indeterminate="false"
-        android:max="70"
+        android:max="50"
         android:progress="0"
         />
 
