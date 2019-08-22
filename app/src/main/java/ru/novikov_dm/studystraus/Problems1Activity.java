@@ -85,6 +85,10 @@ public class Problems1Activity extends AppCompatActivity {
                 Intent intent = new Intent(Problems1Activity.this, InfoActivity.class);
                 startActivity(intent);
                 return true;
+            case R.id.tasks:
+                intent = new Intent(Problems1Activity.this, MainActivity.class);
+                startActivity(intent);
+                return true;
             default:
                     return super.onOptionsItemSelected(item);
         }
@@ -113,5 +117,6 @@ public class Problems1Activity extends AppCompatActivity {
                 Toast.makeText(this, "Неверно(", Toast.LENGTH_SHORT).show();
             }
     }
+
 
 }
